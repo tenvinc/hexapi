@@ -1,0 +1,10 @@
+<launch> 
+ <param name="pca9685/device" type="string" value="/dev/i2c-1" />
+ <param name="pca9685/frequency" type="int" value="50" />
+ <param name="hexapi/length_leg_lower_vert" type="double" value="6" />
+ <param name="hexapi/length_leg_lower_hor" type="double" value="2" />
+ <param name="hexapi/z_min" type="double" value="4.5" />
+ <param name="hexapi/z_max" type="double" value="6.0" />
+ <node name="pca9685_driver" pkg="pwm_pca9685" type="pca9685_node" output="screen"/> 
+ <node name="hexapi_node" pkg="hexapi" type="hexapi_node" output="screen"/> 
+</launch> 
