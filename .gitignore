@@ -1,3 +1,10 @@
+build/**
+devel/**
+.catkin_workspace
+
+# VS code specifics
+.vscode/**
+
 # Prerequisites
 *.d
 
